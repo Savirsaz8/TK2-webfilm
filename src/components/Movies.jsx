@@ -1,6 +1,5 @@
 
 import React, {Fragment} from 'react'
-import {AiFillPlayCircle} from 'react-icons/ai'
 import NoImg from './NoImg.png'
 import '../Styles/Videos.css'
 import Player from "./Player";
