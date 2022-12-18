@@ -41,14 +41,8 @@ function Player({ children, media_type, id, movie_data }) {
   };
 
   useEffect(() => {
-    const fetchVideo = async () => {
-        const {data} = await axios.get(
-          `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=ba8f4caa4e6ebec49f8c6b8ba603ed04&language=en-US`
-        );
-        beforeSetVideo(data);
-    };
     fetchVideo();
-    }, []);
+    }, [fetchVideo]);
 
   return (
     <>
