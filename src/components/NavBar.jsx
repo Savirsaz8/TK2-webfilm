@@ -14,10 +14,8 @@ import ImgDsc from "../assets/text-sort-descending.svg";
 
 export const Container = React.createContext();
 
-const genre = ["Action", "Adventure", "Comedy", "Drama", "Horror"];
-
 function Navbar() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle] = useState(true);
   const [moviesData, setMoviesData] = useState([]);
   const [genresData, setGenresData] = useState([]);
   const [isDesc, setisDesc] = useState(false);
