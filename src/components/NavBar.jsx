@@ -100,7 +100,7 @@ function Navbar() {
                 </div>
               ))}
             </NavDropdown>
-            <span style={{ marginLeft: "-5px" }} onClick={handleSort}>{isDesc ? <img src={ImgDsc} className="color-white" /> : <img src={ImgAsc} className="color-white" />}</span>
+            <span style={{ marginLeft: "-5px" }} onClick={handleSort}>{isDesc ? <img alt='' src={ImgDsc} className="color-white" /> : <img alt='' src={ImgAsc} className="color-white" />}</span>
           </div>
           <div className="input-grouped">
             <input
